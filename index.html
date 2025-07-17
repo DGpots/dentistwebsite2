@@ -2,13 +2,78 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Windhaven Dental</title>
     <link rel="stylesheet" href="css/style.css" />
-    <title>Simple Tailwind Starter</title>
   </head>
-  <body>
-    <h1 class="text-4xl mb-4">Welcome</h1>
-    <p>Start building your Tailwind project</p>
+  <body class="font-sans antialiased leading-normal">
+    <header class="bg-white shadow">
+      <div class="container mx-auto flex items-center justify-between py-4 px-6">
+        <div class="text-xl font-bold text-blue-700">Windhaven Dental</div>
+        <nav class="space-x-4 hidden md:flex">
+          <a href="#" class="text-gray-600 hover:text-blue-700">Home</a>
+          <a href="#about" class="text-gray-600 hover:text-blue-700">About</a>
+          <a href="#services" class="text-gray-600 hover:text-blue-700">Services</a>
+          <a href="#contact" class="text-gray-600 hover:text-blue-700">Contact</a>
+        </nav>
+        <a href="#contact" class="md:hidden text-blue-700">Menu</a>
+      </div>
+    </header>
+
+    <section class="bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1588776814546-1badcaff40ae?auto=format&fit=crop&w=1500&q=80');">
+      <div class="bg-blue-900 bg-opacity-70">
+        <div class="container mx-auto text-center py-24 px-6">
+          <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Caring Dentistry for the Whole Family</h1>
+          <p class="text-lg text-blue-100 mb-8">Providing gentle and comprehensive dental care in a modern environment.</p>
+          <a href="#contact" class="bg-white text-blue-900 font-semibold px-6 py-3 rounded shadow">Book An Appointment</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-16">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-6">Welcome to Windhaven Dental</h2>
+        <p class="text-gray-700 text-center max-w-2xl mx-auto">
+          Our friendly team is dedicated to creating beautiful smiles. We use the latest dental technology to make your visit as comfortable as possible.
+        </p>
+      </div>
+    </section>
+
+    <section id="services" class="bg-gray-50 py-16">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-10">Our Services</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div class="text-blue-700 text-5xl mb-4">&#128522;</div>
+            <h3 class="text-xl font-semibold mb-2">Preventive Care</h3>
+            <p class="text-gray-600">Routine cleanings and exams to keep your smile healthy.</p>
+          </div>
+          <div class="text-center">
+            <div class="text-blue-700 text-5xl mb-4">&#128515;</div>
+            <h3 class="text-xl font-semibold mb-2">Cosmetic Dentistry</h3>
+            <p class="text-gray-600">Whitening, veneers and more for a confident smile.</p>
+          </div>
+          <div class="text-center">
+            <div class="text-blue-700 text-5xl mb-4">&#128578;</div>
+            <h3 class="text-xl font-semibold mb-2">Restorative Treatments</h3>
+            <p class="text-gray-600">Fillings, crowns and implants to restore dental health.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-16">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-4">Ready for Your Next Dental Visit?</h2>
+        <p class="text-gray-700 mb-6">Call us today at <a href="tel:1234567890" class="text-blue-700">(123) 456-7890</a> or click the button below to request an appointment.</p>
+        <a href="#" class="bg-blue-700 text-white px-6 py-3 rounded shadow">Request Appointment</a>
+      </div>
+    </section>
+
+    <footer class="bg-blue-900 text-blue-100 py-6">
+      <div class="container mx-auto px-6 text-center">
+        <p>&copy; 2024 Windhaven Dental. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
