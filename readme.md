@@ -28,6 +28,16 @@ npm run watch
 
 This will watch the `src/input.css` file and build it to `css/style.css`, which will be your final CSS file.
 
+## Local development server
+
+To preview the site while working on it, you can start a lightweight static server:
+
+```bash
+npm start
+```
+
+This serves the project locally at <http://localhost:3000> (or the next available port) so you can see your progress in the browser.
+
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).
